@@ -21,9 +21,11 @@ end
 
 def decode(message)
   words = message.split('   ')
-  words.map { |word| decode_char(word) }.join(' ')
+  words.map { |word| decode_word(word) }.join(' ')
 end
 
-treasure = '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...'
+# Example usage:
+treasure = '-... --- -..-   ..-. ..- .-.. .-..   --- ..-.   ....'
 decoded = decode(treasure)
 puts decoded
+
