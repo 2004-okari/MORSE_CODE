@@ -28,4 +28,3 @@ end
 treasure = '-... --- -..-   ..-. ..- .-.. .-..   --- ..-.   ....'
 decoded = decode(treasure)
 puts decoded
-
